@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="images/pic02.jpg" style="width: 75px;" alt="" />
+			<h1><a href="#">유승배</a></h1>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="index.html" accesskey="1" title="">홈</a></li>
+				<li><a href="profile.html" accesskey="2" title="">프로필</a></li>
+				<li><a href="skill.html" accesskey="3" title="">역량</a></li>
+				<li class="current_page_item"><a href="activity.html" accesskey="4" title="">활동내역</a></li>
+				<li><a href="link.html" accesskey="5" title="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		function menus(n){
+			if( n ==1 ){
+				document.getElementById('prize').style.display = 'block';
+				document.getElementById('exp').style.display = 'none';
+
+			}else{
+				document.getElementById('exp').style.display = 'block';
+				document.getElementById('prize').style.display = 'none';
+
+			}
+		}
+	</script>
+
+
+	<div id="main">
+		<div id="banner">
+			<!--<img src="images/pic01.jpg" alt="" class="image-full" /> -->
+		</div>
+		<div id="featured">
+			<div class="title">
+				<button id="1" onclick="menus('1')">수상</button> <button id="2" onclick="menus('2')" style="margin-left: 60px;">경험</button>
+			</div>
+			<div id="prize" style="display: none;" class="animate__animated animate__fadeInUp">
+			<p>수상</p>
+			<ul class="style1">
+				<li class="first">
+					<p class="date" style="font-size: 10px;"><a href="#"><b>2021.01</b></a></p>
+					<h3>캡스톤디자인 대학생 경진대회 우수상</h3>
+					<p><a href="#">중소기업융합학회<br><b>블록체인을 이용한 아르바이트 경력증명 플랫폼 ALIBI</b></a></p>
+					<br>
+				</li>
+				<li>
+					<p class="date" style="font-size: 10px;"><a href="#"><b>2021.01</b></a></p>
+					<h3>Smart IT world 장려상</h3>
+					<p><a href="#">백석대학교<br><b>블록체인을 이용한 아르바이트 경력증명 플랫폼 ALIBI</b></a></p>
+					<br>
+				</li>
+				<li>
+					<p class="date"  style="font-size: 10px;"><a href="#"><b>2019.12</b></a></p>
+					<h3>캡스톤디자인 및 PBL 경진대회</h3>
+					<p><a href="#">백석대학교<br><b>C를 이용한 포트스캐닝 및 포트차단 프로그램</b></a></p>
+				</li>
+				<li>
+					<p class="date" style="font-size: 10px;"><a href="#"><b>2018.09<br>~<br>2019.07</b></a></p>
+					<h3>스터디 그룹 운영</h3>
+					<p><a href="#"><b>암호수학</b> 스터디 운영<br><b>암호알고리즘 및 프로토콜</b> 스터디 운영 (우수상)</a></p>
+					<br><br>
+				</li>
+			</ul>
+
+			<script>
+				function change(){
+					if(document.getElementById('link').style.display == 'none'){
+
+					document.getElementById('type1').style.display = 'none';
+					document.getElementById('type2').style.display = 'block';
+
+					document.getElementById('link').style.display= 'inline-block';
+					document.getElementById('link2').style.display= 'inline-block';
+					
+					document.getElementById('link').className = "animate__animated animate__fadeInUp";
+					document.getElementById('link2').className= "animate__animated animate__fadeInUp";
+					}else{
+					document.getElementById('link').style.display= 'none';
+					document.getElementById('link2').style.display= 'none';
+
+					
+					document.getElementById('type1').style.display = 'block';
+					document.getElementById('type2').style.display = 'none';
+
+						
+					}
+					
+				}
+			</script>
+
+
+			</div>
+			<div id="exp"style="display: none;" class="animate__animated animate__fadeInUp">
+			<p>경험</p>
+			<p id="type1" style="color: gray;">＃문장이 <a style="color: green;">초록색</a>인 것은 링크가 있습니다.<button style="margin-left: 10px; background-color: white;" onclick="change()">표시변경</button></p>
+			<p id="type2" style="color: gray; display: none;">*문장앞에 #이 붙은 것은 링크가 있습니다.<button style="margin-left: 10px; background-color: white;" onclick="change()">표시변경</button></p>
+
+			<ul class="style1">
+				<li>
+					<p class="date"style="font-size: 10px;"><a href="#"><b>2021.01</b></a></p>
+					<h3><b>임픽스</b> 인턴십</h3>
+					<p><a style="display: none;" id="link">#</a><a href="https://www.notion.so/a3e4fafd54bd4913b5e2c87aad24595b" style="color: green;"target="_blank">SCM 관련 프라이빗 블록체인 조사</a></p>
+					<br><br>
+				</li>
+				<li class="first">
+					<p class="date"style="font-size: 10px;"><a href="#"><b>2020.11<br>~<br>2020.12</b></a></p>
+					<h3><b>데일리블록체인</b> 현장실습</h3>
+					<p><a style="display: none;" id="link2">#</a><a href="https://docs.google.com/presentation/d/1Mzn1oipjCfmBdMXWHsSVfj6uZEwxMXuAfwNDgwnTXXk/edit#slide=id.g9e9cac102f_1_102" target="_blank" style="color: green;">코인마켓캡 시총 100,</a><a href="https://docs.google.com/presentation/d/1UfO91kga2y5YByxThYOc7NANpEsZtM-gIyrBGIi23iY/edit#slide=id.p" target="_blank" style="color: green;"> DeFi 100 코인 백서 분석</a></p> 	
+					<p><a href="#">Hyperledger Indy 실습</a></p>
+					<p><a href="#">Slack, Trello 연동 및 사용</a></p>
+					<br>
+				</li>
+				<li>
+					<p class="date"style="font-size: 10px;"><a href="#"><b>2019.11</b></a></p>
+					<h3>종합학술대회 논문 투고</h3>
+					<p>한국사물인터넷 학회</p>
+					<p><a><b>포트스캐닝을 활용한 백도어 탐지/대응 기법</b></a></p>
+					<br><br>
+				</li>
+			</ul>
+			</div>
+
+		</div>
+		<div id="copyright">
+			<span>&copy; Untitled. All rights reserved.</span>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

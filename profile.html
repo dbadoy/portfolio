@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="images/pic02.jpg" style="width: 75px;" alt="" />
+			<h1><a href="#">유승배</a></h1>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="index.html" accesskey="1" title="">홈</a></li>
+				<li class="current_page_item"><a href="profile.html" accesskey="2" title="">프로필</a></li>
+				<li><a href="skill.html" accesskey="3" title="">역량</a></li>
+				<li><a href="activity.html" accesskey="4" title="">활동내역</a></li>
+				<li><a href="link.html" accesskey="5" title="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div id="banner">
+			<!--<img src="images/pic01.jpg" alt="" class="image-full" /> -->
+		</div>
+		<div id="featured" class="animate__animated animate__fadeInUp">
+			<div class="title">
+				<h2 style="margin-left: 16px;"class="animate__animated animate__fadeIn">안녕하세요.</h2> <!-- 효과 주기 -->
+				<span class="byline">배우는 것을 즐기는 유승배입니다.</span>
+			</div>
+			
+			<div style="text-align: center;">
+				 
+					<h2 >나의 블록체인</h2>
+
+				 
+				  <!--<div><img style="margin-top:15px; margin-left: 180px; border-radius: 15px;" src="./image/11.PNG"></div>-->
+
+				<hr>
+				<div  style="margin-left: 90px;">
+				  <div class="hashtest" id="div2">
+					<a >성실</a>
+					<textarea style="width: 180px;border-radius: 5px;height: 80%; font-family:'Source Sans Pro', sans-serif;"id="area2" onkeyup="hashing(this)">제 인생 목표중 하나는, 약속시간에 1분이라도 늦는다면 상대방이 무슨 일이 있나 걱정하는 생각이 들도록 사는 것 입니다. 그만큼 제게 성실은 큰 의미이며, 지키기 위해 노력하며 살고 있습니다.</textarea>
+					<button style="background-color: white;"onclick="test1()">확대</button>
+				</div>
+				  <div class="hashtest" id="div3">
+					<a id="div3_a">호기심</a>
+					<textarea style="width: 180px;border-radius: 5px;height: 80%; font-family:'Source Sans Pro', sans-serif;"id="area3" onkeyup="hashing(this)">코딩을 하다보면 모르는 것이 나오고, 그것을 알기위해 인터넷을 찾아보는 경우가 자주 생깁니다. 이런 경우에는 꼬리에 꼬리를 물며 찾아가다 보면 시간이 훌쩍 가있는 경우가 태반입니다. 저는 이러한 경험이 즐거웠으며, 새로운 것을 배우는 것에 있어서도 두려움을 가지지 않을 수 있게 하는 경험이라 생각합니다.</textarea>
+					<button id="div3_butt"style="background-color: white;" onclick="test2()">확대</button>
+				</div>
+				  <div class="hashtest" id="div4">
+					<a id="div4_a">몰입</a>
+					<textarea style="width: 180px;border-radius: 5px;height: 80%; font-family:'Source Sans Pro', sans-serif;"id="area4" onkeyup="hashing(this)">캡스톤 프로젝트를 진행하던 시기에, 막히던 부분을 마주하게 되는 경우가 꽤 있었습니다. 그럴때면 산책을 할 때나 버스타고 이동할 때, 어떻게 하면 더 나을지, 평소에 계속해서 고민했던 기억이 납니다. 이렇듯 저는 개발에 깊은 흥미를 느끼며, 문제를 해결하는 것에 재미를 느낍니다.</textarea>
+					<button id="div4_butt" style="background-color: white;" onclick="test3()">확대</button> 
+				</div>
+				</div>
+			  </div>
+			  
+		</div>
+		<div class="animate__animated animate__fadeInUp" style="visibility: visible;">
+		<p style="font-size: 8px;">글자가 하나라도 바뀌면, 바뀐 것을 알 수 있습니다. </p>
+
+		기존값 　 : 　<p style="display: inline-block;"id="origin">dd</p><br>
+		현재값 　 : 　<p style="display: inline-block;" id="now"></p><br>
+		<button style="margin-bottom: 5px;" onclick="reset()">되돌리기</button><br>
+		
+		</div>
+		<script>
+
+			function test1(){
+				if(document.getElementById('area2').style.width =='180px'){
+					document.getElementById('area2').style.width = '500px';
+					document.getElementById('div3').style.display = 'none';
+					document.getElementById('div4').style.display = 'none';
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					
+				}else{
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					document.getElementById('area2').style.width = '180px';
+					document.getElementById('div3').style.display = 'block';
+					document.getElementById('div4').style.display = 'block';
+				}
+			}
+			function test2(){
+				if(document.getElementById('area3').style.width =='180px'){
+					document.getElementById('area3').style.width = '440px';
+					document.getElementById('div2').style.visibility = 'hidden';
+					document.getElementById('div4').style.visibility = 'hidden';
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					
+				}else{
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					document.getElementById('area3').style.width = '180px';
+					document.getElementById('div2').style.visibility = 'visible';
+					document.getElementById('div4').style.visibility = 'visible';
+				}
+			}function test3(){
+				if(document.getElementById('area4').style.width =='180px'){
+					
+					document.getElementById('area4').style.width = '400px';
+					document.getElementById('div2').style.visibility = 'hidden';
+					document.getElementById('div3').style.display = 'none';
+
+					document.getElementById('div4').style.width = '320px';
+					document.getElementById('div4_a').style.marginLeft= '240px';
+					document.getElementById('div4_butt').style.marginLeft= '240px';
+					
+
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					
+				}else{
+					
+					//$('#area2').addClass('animate__animated animate__fadeInUp')
+					document.getElementById('area4').style.width = '180px';
+					document.getElementById('div2').style.visibility = 'visible';
+					document.getElementById('div3').style.display = 'block';
+
+					document.getElementById('div4').style.width = '163px';
+					document.getElementById('div4_a').style.marginLeft= '0px';
+					document.getElementById('div4_butt').style.marginLeft= '0px';
+
+				}
+			}
+
+
+
+
+		</script>
+			 
+			  
+			  <script>
+				 const area2 = document.getElementById("area2");
+				 const area3 = document.getElementById("area3");
+				 const area4 = document.getElementById("area4");
+				 document.getElementById("origin").innerText = CryptoJS.SHA256( area2.value + area3.value + area4.value).toString();
+				 document.getElementById("now").innerText = CryptoJS.SHA256( area2.value + area3.value + area4.value).toString();
+			 
+			 </script>
+		   
+			 <script>
+				 function reset(){
+					 const text2 = "제 인생 목표중 하나는, 약속시간에 1분이라도 늦는다면 상대방이 무슨 일이 있나 걱정하는 생각이 들도록 사는 것 입니다. 그만큼 제게 성실은 큰 의미이며, 지키기 위해 노력하며 살고 있습니다.";
+					 const text3 = "코딩을 하다보면 모르는 것이 나오고, 그것을 알기위해 인터넷을 찾아보는 경우가 자주 생깁니다. 이런 경우에는 꼬리에 꼬리를 물며 찾아가다 보면 시간이 훌쩍 가있는 경우가 태반입니다. 저는 이러한 경험이 즐거웠으며, 새로운 것을 배우는 것에 있어서도 두려움을 가지지 않을 수 있게 하는 경험이라 생각합니다.";
+					 const text4 = "캡스톤 프로젝트를 진행하던 시기에, 막히던 부분을 마주하게 되는 경우가 꽤 있었습니다. 그럴때면 산책을 할 때나 버스타고 이동할 때, 어떻게 하면 더 나을지, 평소에 계속해서 고민했던 기억이 납니다. 이렇듯 저는 개발에 깊은 흥미를 느끼며, 문제를 해결하는 것에 재미를 느낍니다.";
+
+					 const area2 = document.getElementById("area2");
+					 const area3 = document.getElementById("area3");
+					 const area4 = document.getElementById("area4");
+					 
+					 area2.value = text2;
+					 area3.value = text3;
+					 area4.value = text4;
+
+					 const total_text = area2.value + area3.value + area4.value;
+					 const myhash = CryptoJS.SHA256(total_text).toString()  ;
+					 document.getElementById("now").innerText = myhash; 
+
+				 }
+
+
+			   function hashing(a){
+				 const area2 = document.getElementById("area2");
+				 const area3 = document.getElementById("area3");
+				 const area4 = document.getElementById("area4");
+				 
+				 let total_text = "";
+				 switch(a.id){
+					 case "area2":
+						total_text = a.value + area3.value + area4.value;
+					   break;
+					 case "area3":
+						total_text = area2.value + a.value + area4.value;
+						break;
+					 case "area4":
+						total_text = area2.value + area3.value + a.value;
+						break;
+
+				 }
+				 
+				 const myhash = CryptoJS.SHA256(total_text).toString()  ;
+				 document.getElementById("now").innerText = myhash;     
+			   }
+		   
+			 </script>
+		<div id="copyright"class="animate__animated animate__fadeInUp">
+			<span>&copy; Untitled. All rights reserved.</span>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

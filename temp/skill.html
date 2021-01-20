@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="images/pic02.jpg" alt="" />
+			<h1><a href="#">유승배</a></h1>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="index.html" accesskey="1" title="">홈</a></li>
+				<li><a href="profile.html" accesskey="2" title="">프로필</a></li>
+				<li class="current_page_item"><a href="skill.html" accesskey="3" title="">역량</a></li>
+				<li><a href="activity.html" accesskey="4" title="">활동내역</a></li>
+				<li><a href="link.html" accesskey="5" title="">Link</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main" >
+		<div  class="animate__animated animate__fadeInUp">
+		<div id="banner">
+            <!--<img src="images/pic01.jpg" alt="" class="image-full" /> -->
+		</div>
+		<div id="featured">
+
+		<script>
+			function move(s){
+				document.getElementById(s).style.display = 'block'
+				document.getElementById(s).className = "animate__animated animate__fadeInUp"
+				document.getElementById('menus').style.display = 'none'
+			}
+			function menus(s){
+				document.getElementById(s).style.display = 'none'
+				document.getElementById('menus').className = "animate__animated animate__fadeInUp"
+				document.getElementById('menus').style.display = 'block'
+			}
+
+		</script>
+
+		<div id="menus" style="display: block;">
+		<ul>
+			<a onclick="move('cplus')"><img src="images/c++-removebg-preview.png" style="width: 50px; margin-left: 25px;"><br></a>
+			<a onclick="move('nodejs')"><img src="images/nodejs-removebg-preview.png" style="width: 120px;"></a>
+			<a onclick="move('eos')"><img src="images/eos-removebg-preview.png" style="width: 70px;"><br><br></a>
+			<div style="margin-right: 50px;">
+			<a onclick="move('python')"><img src="images/python-removebg-preview.png" style="width: 210px;"></a>
+			<a onclick="move('ipfs')"><img src="images/ipfs-removebg-preview.png" style="width: 70px; margin-bottom: 20px;"><br></a>
+			</div>
+			<a onclick="move('go')"><img src="images/Go-removebg-preview.png" style="width: 70px;"></a>
+		</ul>
+		</div>
+		<!--  -->
+		<div id="cplus" style="display: none;">
+			<p>C++</p>
+			<a onclick="menus('cplus')"><img src="images/c++-removebg-preview.png" style="width: 50px; margin-left: 5px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<h2>EOS 스마트컨트랙트</h2><br>
+					<p>EOS 스마트컨트랙트는 C++ 기반으로 작성됩니다.<br></p>
+					<p><a style="color: black;" href="https://github.com/dbadoy/smart-contracts">Github</a></p>
+					<br>
+					<h2>도서관 프로그램</h2>
+					<p>내용~~~~</p>
+					<a style="color: black;" href="https://docs.google.com/document/d/1Pn8Px7v8uMzG71fbZIkCU5awtkH8Hw2lAmW6hS7sDZs/edit?usp=sharing">Code</a>
+					<br>
+				</div>
+			</ul>
+		</div>
+
+		
+		<div id="nodejs" style="display: none;">
+			<p>Nodejs</p>
+			<a onclick="menus('nodejs')"><img src="images/nodejs-removebg-preview.png" style="width: 120px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h2>ALIBI</h2>
+					<h4>블록체인을 이용한 아르바이트 경력증명 플랫폼입니다.</h4>
+					<b><p>사용자</p></b><p>회원가입시, 휴대폰 인증을 제공하며 eosjs를 이용하여 EOS계정을 생성</p>
+					<p>토큰을 이용한 로그인 구현 ( jwt )</p>
+
+					<h4>근로계약서 및 퇴직서 등록</h4>
+					<p>사업자번호를 입력받아 계약서에 사업체이름을 입력받는 API 구현</p>
+					<p>eosjs를 연동하여 계약서의 해시값, 사용자들의 서명값을 블록체인에 저장</p>
+
+
+					<h4>경력증명서 발급 및 공유</h4>
+					<p>사용자의 경력데이터를 EOS NFT에 넣어 사용자에게 발급</p>
+					<p>발급 받은 NFT를 제 3자에게 공유하여 경력데이터를 제출 가능</p>
+					<hr>
+
+
+
+					<br>
+					<h2>Adoysign</h2><br>
+					<p>블록체인을 이용한 전자서명 플랫폼입니다.</p>
+					<br>
+				</div>
+			</ul>
+		</div>
+
+		<div id="eos" style="display: none;">
+			<p>EOS</p>
+			<a onclick="menus('eos')"><img src="images/eos-removebg-preview.png" style="width: 70px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<h2>OOOO</h2>
+					<p>abcdef ...</p>
+				</div>
+			</ul>
+		</div>
+
+		<div id="python" style="display: none;">
+			<p>Python</p>
+			<a onclick="menus('python')"><img src="images/python-removebg-preview.png" style="width: 210px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<h2>OOOO</h2>
+					<p>abcdef ...</p>
+				</div>
+			</ul>
+		</div>
+
+		<div id="ipfs" style="display: none;">
+			<p>IPFS</p>
+			<a onclick="menus('ipfs')"><img src="images/ipfs-removebg-preview.png" style="width: 70px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<h2>OOOO</h2>
+					<p>abcdef ...</p>
+				</div>
+			</ul>
+		</div>
+
+		<div id="go" style="display: none;">
+			<p>Go</p>
+			<a onclick="menus('go')"><img src="images/go-removebg-preview.png" style="width: 70px; margin-right: 10px;"></a>
+			<br><br>
+			<ul style="text-align: left;">
+				<div>
+					<h2>OOOO</h2>
+					<p>abcdef ...</p>
+				</div>
+			</ul>
+		</div>
+		<!--  -->
+
+		<p style="color: gainsboro; margin-left: 15px; margin-top: 40px;">아이콘을 클릭해주세요 ! </p>
+	</div>
+		<div id="copyright">
+			<span>&copy; Untitled. All rights reserved.</span>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

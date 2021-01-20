@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="images/pic02.jpg" style="width: 75px;" alt="" />
+			<h1><a href="#">유승배</a></h1>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="index.html" accesskey="1" title="">홈</a></li>
+				<li><a href="profile.html" accesskey="2" title="">프로필</a></li>
+				<li class="current_page_item"><a href="skill.html" accesskey="3" title="">역량</a></li>
+				<li><a href="activity.html" accesskey="4" title="">활동내역</a></li>
+				<li><a href="link.html" accesskey="5" title="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main" >
+		<div  class="animate__animated animate__fadeInUp">
+		<div id="banner">
+            <!--<img src="images/pic01.jpg" alt="" class="image-full" /> -->
+		</div>
+		<div id="featured">
+
+		<script>
+			function move(s){
+				document.getElementById(s).style.display = 'block'
+				document.getElementById(s).className = "animate__animated animate__fadeInUp"
+				document.getElementById('menus').style.display = 'none'
+			}
+			function menus(s){
+				document.getElementById(s).style.display = 'none'
+				document.getElementById('menus').className = "animate__animated animate__fadeInUp"
+				document.getElementById('menus').style.display = 'block'
+			}
+
+		</script>
+
+        <div id="menus" style="display: block;">
+        <p>프로젝트</p>
+        <ul style="text-align: left;">
+            <div class="select" onclick="move('alibi')">
+                <h2>ALIBI</h2>  
+                <p style="display: inline-block;">블록체인을 이용한 아르바이트 경력증명 플랫폼</p>
+            </div>
+
+            <div class="select" onclick="move('adoysign')">
+                <h2>Adoysign</h2>  
+                <p style="display: inline-block;">블록체인을 이용한 전자서명 플랫폼</p>
+            </div>
+
+            <div class="select" onclick="move('gam')">
+                <h2>감귤</h2>  
+                <p style="display: inline-block;">텐서플로우를 이용한 온도에 따른 감귤 가격 예측 프로그램</p>
+            </div>
+
+            <div class="select" onclick="move('port')">
+                <h2>포트스캐닝</h2>  
+                <p style="display: inline-block;">C Winsock을 이용한 포트스캐닝 및 포트 차단</p>
+            </div>
+
+            <!-- <div class="select" onclick="move('crawl')">
+                <h2>크롤링</h2>  
+			</div>
+			-->
+		</ul>
+		</div>
+		<!--  -->
+        <div id="alibi" style="display: none;">
+			<p onclick="menus('alibi')" style="text-align: left;"><button style="background-color: white;">돌아가기</button></p><h2>ALIBI</h2>
+            <br>
+            <div style="margin-left: 25px;">
+                <img src="images/c++-removebg-preview.png" style="width: 35px;">
+                <img src="images/eos-removebg-preview.png" style="width: 45px; margin-left: 18px;">
+                <img src="images/nodejs-removebg-preview.png" style="width: 80px;"> 
+            </div>
+            <br>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h2>블록체인을 이용한 아르바이트 경력증명 플랫폼 ALIBI입니다.</h2><br>
+					<b><p style="font-size: 15px;">아르바이트 구인구직 과정에서 실제적인 경력 검증이 이루어 지지 않고 있는 것에서 착안하여 진행한 프로젝트입니다.</p></b>	
+					<button style="background-color: white;" onclick="window.open('https://docs.google.com/presentation/d/17JQ-NQELZ6oKHB-l_CTAHbDvr-BgIE5p1YR2HjL3qU4/edit#slide=id.ga92b69e242_2_396')">PPT</button>
+					<button style="background-color: white; margin-left: 15px;" onclick="window.open('https://docs.google.com/document/d/1Rkcjrij39h7yEE3ISIFx3qMF9xBiCkU8wXJboI9WmsE/edit?ts=5f4caf21')">제안서</button>
+					<br><br><br>
+					<p>해당 프로젝트에서 저는 EOS 스마트컨트랙트 작성 및 배포, 백엔드를 담당했습니다.</p>
+					<a><b>스마트컨트랙트</b></a>
+					<p>EOS BP 중 하나인 CryptoLions에서 배포하는 NFT 스마트컨트랙트 <a style="color: black;" href="https://GitHub.com/CryptoLions/SimpleAssets" target="_blank">SimpleAssets</a>를 진행중인<br>프로젝트에 맞게 수정 & 배포<a style="color: black; margin-left: 15px;" href="https://GitHub.com/dbadoy/smart-contracts/tree/main/alibi" target="_blank">GitHub</a></p>
+					
+					<a><b>백엔드</b></a>
+					<p>회원가입 - 휴대폰인증 ( Twilio )<br>
+					토큰을 이용한 로그인 ( jwt )<br>
+					백엔드 - 블록체인 연결 및 트랜잭션 송수신( eosjs )<br>
+					사업자인증번호 조회 API 구현<a style="color: black; margin-left: 15px;" href="https://GitHub.com/dbadoy/nodejs/blob/main/%EC%82%AC%EC%97%85%EC%9E%90%EB%93%B1%EB%A1%9D%EB%B2%88%ED%98%B8%EC%A1%B0%ED%9A%8C.js" target="_blank">GitHub</a><br>
+					공개키를 이용한 서명 및 검증<br>
+					MongoDB</p>
+
+					<p>스마트컨트랙트 배포계정 : <b>alibicontrac</b> ( Jungle3 ) <br><button style="background-color: white;" onclick="window.open('https://jungle3.bloks.io/account/alibicontrac')">EOS explorer</button></p>	
+					
+				</div>
+			</ul>
+		</div>
+
+		
+        <div id="adoysign" style="display: none;">
+			<p onclick="menus('adoysign')" style="text-align: left;"><button style="background-color: white;">돌아가기</button></p><h2>Adoysign</h2>
+            <br>
+            <div>
+                <img src="images/c++-removebg-preview.png" style="width: 35px;">
+                <img src="images/eos-removebg-preview.png" style="width: 45px; margin-left: 18px;">
+                <img src="images/nodejs-removebg-preview.png" style="width: 80px; margin-right: 10px;">
+                <img src="images/ipfs-removebg-preview.png" style="width: 40px;">
+            </div>
+            <br>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h2>블록체인을 이용한 전자서명 플랫폼 Adoysign입니다.</h2><br>
+					<b><p>새로운 전자서명 방식을 제시합니다.</p></b>
+					
+					<p style="font-size: 14px;">프론트 : Vanila JS　　백엔드 : Nodejs<br>블록체인 : EOS　　　문서공유 : IPFS<br>DB : MongoDB</p>
+					<br>
+
+					<a><b>Key Point</b></a>
+					<p>랜덤한 문자열 signCode를 발급, 사용자만 알고 있는 signCode를 이용하여 서명</p>
+					<p style="color: gray; font-size: 12px;">ascii-printable ( 95개 ) 중에 랜덤한 문자열을 정한다. signCode는 5글자로 정해져 있으며 변경 가능하다.<br>5글자 : 95⁵ = 경우의 수 약 77억<br>6글자 : 95⁶ = 경우의 수 약 7350억<br>8글자 : 95⁸ = 경우의 수 약 6634조<br>※실제 서비스를 할 경우에는 8글자 이상을 권장, signCode는 외워서 사용하는 것이 아닌 서명하기 전 <br>발급받는 OTP개념이기 때문에 길어도 문제가 되지 않을 것으로 생각됨.</p>
+					
+					<a><b>특징</b></a>
+					<p>1. EOS를 이용한 전자서명<br>2. 개인과 개인간 플랫폼을 통해 자유롭게 문서 등록 및 서명 가능<br>3. 다중 서명 가능<br></p>
+
+
+					<a><b>구현 기술</b></a>
+					<p>- 회원가입 - email 인증 ( EOS 계정에 대한 본인 확인 )<br>- nodejs express를 이용한 RESTful API 구현<br>- IPFS(ipfs-http-client)를 이용한 문서 분산 저장</p><br>
+
+					<a><b>스마트컨트랙트</b></a><br>
+					<p>EOS 스마트컨트랙트 작성 및 배포<a style="color: black; margin-left: 15px;" href="https://github.com/dbadoy/smart-contracts/tree/main/adoysign" target="_blank">GitHub</a><br>배포계정 : <b>adoycontract</b> ( Jungle3 )</p>
+					<button style="background-color: white;" onclick="window.open('https://jungle3.bloks.io/account/adoycontract')">EOS explorer</button></p>	
+					
+
+					<a><b>프로세스</b></a>
+					<p>문서<a style="color: black; margin-left: 15px;" href="https://docs.google.com/presentation/d/1ibGdVajbw3LHLZprPly4GD8wpUS5Sc2-yeCGpwIklNs/edit#slide=id.gb72a271ada_0_0" target="_blank">Link</a></p>
+					<br>
+
+					<a><b>Demo</b></a><br>
+					<button style="background-color: white;" onclick="window.open('http://34.64.164.233:3000')">Adoysign</button></p>	
+				</div>
+			</ul>
+		</div>
+
+        <div id="gam" style="display: none;">
+            <p onclick="menus('gam')" style="text-align: left;"><button style="background-color: white;">돌아가기</button></p><h2>감귤</h2>
+            <br>
+            <div>
+                <img src="images/python-removebg-preview.png" style="width: 180px;">
+            </div>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h2>텐서플로우를 이용한 온도 입력에 따른 감귤 가격 예측 프로그램</h2>
+					<b><p style="font-size: 14px;">농산물 유통 정보에서 감귤의 일별 평균온도, 최소온도, 최고온도, 강수량, 평균 가격을 학습<br>온도 입력시 예측 가격 출력</p></b>
+					<b><a>데이터셋</a></b><br>
+					<button style="background-color: white;" onclick="window.open('https://docs.google.com/spreadsheets/d/1ETkt58wX9I-T-7H8jjEM_pyuiy9VhNkfl5Wx2UX_PkM/edit#gid=1878706756')">훈련데이터</button>
+					<button style="background-color: white;" onclick="window.open('https://docs.google.com/spreadsheets/d/1mu237IXmzVryangzDEck7WjqombICPhEd0ZYuNLmwP8/edit#gid=1667568507')">테스트데이터</button>
+					<br><br>
+					<b><a>결과보고서</a></b><br>
+					<button style="background-color: white;" onclick="window.open('https://docs.google.com/presentation/d/1FC-32HmG5q56MlCBLKkgLCEvX2LAPQwrbyWvCzv0jKU/edit#slide=id.p1')">Link</button>
+					<br><br>
+					<b><a>코드</a></b><br>
+					<p>모델1　<button style="background-color: white;" onclick="window.open('https://pastebin.com/fBNm8Pc7')">Link</button></p>
+					<p>테스트　<button style="background-color: white;" onclick="window.open('https://pastebin.com/eeAtUrQj')">Link</button></p>
+					<hr><br>
+					<p>모델2　<button style="background-color: white;" onclick="window.open('https://pastebin.com/mT3PMdg9')">Link</button></p>
+					<p>테스트　<button style="background-color: white;" onclick="window.open('https://pastebin.com/EnHBYMSG')">Link</button></p>
+					<hr>
+					<b><a>화면</a></b>
+					<div style="text-align: center;"></div>
+						<p>메인화면</p>
+						<img src="./images/gam/1.png" style="width: 420px;"><hr>
+						<p>가격 예측</p>
+						<img src="./images/gam/2.png" style="width: 420px;"><hr>
+						<p>최적 조건</p>
+						<img src="./images/gam/3.png" style="width: 420px;"><hr>
+						<p>테스트데이터 예측/정답 ( 성능확인 용도 )</p>
+						<img src="./images/gam/4.png" style="width: 420px;">
+						<img src="./images/gam/5.png" style="width: 420px;"><hr>
+					</div>
+
+					
+
+				
+				</div>
+			</ul>
+		</div>
+
+		<div id="port" style="display: none;">
+			<p onclick="menus('port')" style="text-align: left;"><button style="background-color: white;">돌아가기</button></p><h2>포트스캐닝</h2>
+            <br>
+            <h2>C</h2>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h3>C WinSock을 이용한 포트스캐닝 및 포트차단리스트 관리 프로그램</h3>
+					<br><br>
+					
+					<a><b>주요기능</b></a>
+					<p>1. 포트스캐닝<br>- 범위 지정, 단일 포트 스캐닝<br>2. 사용중인 포트 닫기<br>- C의 system()을 이용하여 cmd 명령어 사용(netstat), 프로세스의 SID를 출력해준 후 사용자가 선택 종료<br>3. 포트차단리스트<br>- 차단할 포트번호를 'portlist2.txt'에 저장 후, 차단리스트 실행 하면 해당 번호들의 포트들이 닫힘. 초기화 가능<br>(netsh를 이용한 포트 차단) </p>
+					
+					<a><b>코드</b></a><br>
+					<button style="background-color: white;" onclick="window.open('https://pastebin.com/uJXyz5sv')">Link</button>
+				</div>
+			</ul>
+		</div>
+		<!--
+		<div id="crawl" style="display: none;">
+			<p onclick="menus('crawl')" style="text-align: left;"><button style="background-color: white;">돌아가기</button></p><h2>크롤링</h2>
+            <br>
+            <div>
+                <img src="images/nodejs-removebg-preview.png" style="width: 80px;margin-left:42px; margin-bottom: 24px;">
+                <img src="images/python-removebg-preview.png" style="width: 180px;">
+            </div>
+			<ul style="text-align: left;">
+				<div>
+					<hr>
+					<h2>OOOO</h2>
+					<p>abcdef ...</p>
+				</div>
+			</ul>
+		</div>
+		-->
+
+	</div>
+		<div id="copyright"class="animate__animated animate__fadeInUp">
+			<span>&copy; Untitled. All rights reserved.</span>
+			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
